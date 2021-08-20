@@ -1,0 +1,145 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ㅇㅅㅇ</title>
+    <link rel="shortcut icon"
+          href="">
+    <meta property="og:image"
+          content="https://christcenteredholidays.com/wp-content/uploads/2017/08/800-X-400-Christmas-printables-featured-image.jpg">
+    <meta property="og:title" content="ㅇㅅㅇ">
+    <meta property="og:description" content="ㅅㅅ">
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+    <style>
+        * {
+            font-family: 'Gaegu', cursive;
+        }
+
+        body {
+            background-color: #000000;
+        }
+
+        .envelope {
+            background-image: url('https://pngimg.com/uploads/envelope/envelope_PNG18366.png');
+            background-size: cover;
+            background-position: center;
+            width: 200px;
+            height: 200px;
+            margin: 200px auto 0px auto;
+            cursor: pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+        .letter-open {
+            display: none;
+        }
+
+        .jesusstar {
+            background-color: white;
+            width: 250px;
+            height: 250px;
+            background-image: url('sad.jpg');
+            background-position: center;
+            background-size: cover;
+            margin: 100px auto 0px auto;
+            border-radius: 150px;
+            border: 5px solid white;
+            box-shadow: 0px 0px 10px 0px white;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        .msgbox {
+            width: 500px;
+            background-color: ivory;
+            margin: auto;
+            color: brown;
+            padding: 30px;
+            font-size: 20px;
+            line-height: 30px;
+            box-shadow: 0px 0px 10px 0px white;
+            text-align: center;
+        }
+
+        .from {
+            text-align: right;
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msgbox {
+                width: 300px;
+                padding: 20px;
+            }
+
+            .rtan {
+                width: 150px;
+                height: 150px;
+                margin: 70px auto 0px auto;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .envelope {
+                margin: 150px auto 0px auto;
+            }
+        }
+    </style>
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+        }
+        function go_jesusstar() {
+            alert('나의 마음이야 ㅜ');
+            window.location.href = 'https://www.youtube.com/watch?v=IAtK63Uf6yY';
+        }
+    </script>
+</head>
+
+<body>
+    <div class="letter-close">
+        <div class="envelope" onclick="open_letter()"></div>
+        <h2 class="envelope-msg">열어줘...</h2>
+    </div>
+    <div class="letter-open">
+        <div class="jesusstar" onclick="go_jesusstar()">
+        </div>
+        <h1>HEY !</h1>
+
+        <div class="msgbox">
+            만나는 사람 있는거 안다며  <br />
+            이렇게 사적으로 전화하는거 불편해 <br />
+            너 상황 아니까 나도 좋게 기억하고 싶어서 말 안했는데  <br />
+            너 기다릴때 많이 지쳤고 힘들었어  <br />
+            그때 휴학하고 내 연락도 다 씹었으면서  <br />
+            이제와서 뭘 할 수 있겠어 <br />
+            갑자기 무슨 생각으로 이러는지 모르겠는데 <br />
+            이젠 그냥 스쳐지나가는 사람이였다고 생각해<br />
+            너도 그게 맞는거고 답장 꼭 해줘~ <br />
+           
+            <p class="from">2021.08.20 너의 연락을 기다리는 유히 씀</p>
+        </div>
+    </div>
+</body>
+
+</html>
